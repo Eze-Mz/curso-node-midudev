@@ -1,0 +1,11 @@
+{
+  "name": "curso-node-midudev",
+  "version": "1.0.0",
+  "description": "- síncrono -> ocupan el proceso principal por lo tanto nuestro programa no puede hacer otra cosa hasta que termine\r - asíncrono callback -> se ejecuta el callback del primero que termina\r - asíncrono secuencial (async-await) -> se lee uno, se espera a que se resuelva, se resuelve y sigue con el otro, el proceso se libera en cad caso\r - asíncrono paralelo (promise.all) -> espera que se resuelvan todas las promesas, se leen los archivos a la vez",
+  "main": "fs-asyncawait.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

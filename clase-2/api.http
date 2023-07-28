@@ -1,0 +1,14 @@
+GET http://localhost:1234/
+### Lobo azul
+GET http://localhost:1234/lobo-azul
+### Lobo blanco
+GET http://localhost:1234/lobo-blanco
+
+### Crear un lobo
+POST http://localhost:1234/lobo
+Content-Type: application/json,
+
+{
+    "name": "siberiano",
+    "color": "gray and white"
+}
