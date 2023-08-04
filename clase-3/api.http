@@ -1,0 +1,33 @@
+### Recuperar todas las películas
+GET http://localhost:1234/movies
+
+### Recuperar una película por id
+GET http://localhost:1234/movies/8fb17ae1-bdfe-45e5-a871-4772d7e526b8
+
+### Recuperar las películas por género
+GET http://localhost:1234/movies?genre=drama
+
+### Crear una película
+POST http://localhost:1234/movies
+content-type: application/json
+
+{
+    "title": "The Godfather",
+    "year": 1972,
+    "director": "Francis Ford Coppola",
+    "duration": 175,
+    "poster": "https://i.imgur.com/Uzvny9I.jpg",
+    "genre": ["Crime"],
+    "rate": 9.2
+}
+
+### Borrar una película
+DELETE http://localhost:1234/movies/The Godfather
+
+### Actualizar una película
+PATCH http://localhost:1234/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+content-type: application/json
+
+{
+    "year": 1994
+}
